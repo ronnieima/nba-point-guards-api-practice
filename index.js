@@ -1,6 +1,9 @@
 const express = require('express')
 const app = express()
+const cors = require('cors')
 const PORT = 8000
+
+app.use(cors)
 
 const rappers = {
     '21 savage':{
@@ -12,6 +15,11 @@ const rappers = {
         'age': 29,
         'birthName': 'Chancelor Bennett',
         'birthLocation': 'Chicago, Illiniois' 
+    },
+    'yung kaitoima': {
+        'age': 21,
+        'birthName': 'Kaitoima',
+        'birthLocation': 'Tamuning, Guam'
     },
     'unknown': {
         'age': 0,
