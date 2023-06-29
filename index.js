@@ -3,7 +3,7 @@ const app = express()
 const cors = require('cors')
 const PORT = 8000
 
-app.use(cors())
+app.use(cors)
 
 const rappers = {
     '21 savage':{
@@ -38,10 +38,9 @@ app.get('/', (request, response) => {
 app.get('/api/:name', (request, response) =>{
     let rapperName = request.params.name.toLowerCase()
     if (rappers[rapperName]){
-        response.json(rappers[rapperName].birthName)
+        response.json(rappers[rapperName])
     } else{
-        response.json(rappers['unknown'].birthName)
-    }
+        response.json(rappers['unknown'])
 })
 
 app.listen(process.env.PORT || PORT, () => {
