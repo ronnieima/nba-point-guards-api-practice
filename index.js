@@ -13,6 +13,11 @@ const rappers = {
         'birthName': 'Chancelor Bennett',
         'birthLocation': 'Chicago, Illiniois' 
     },
+    'yung kaitoima': {
+        'age': 21,
+        'birthName': 'Kaitoima',
+        'birthLocation': 'Tamuning, Guam'
+    },
     'unknown': {
         'age': 0,
         'birthName': 'Unknown',
