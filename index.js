@@ -41,6 +41,7 @@ app.get('/api/:name', (request, response) =>{
         response.json(rappers[rapperName])
     } else{
         response.json(rappers['unknown'])
+    }
 })
 
 app.listen(process.env.PORT || PORT, () => {
