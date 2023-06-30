@@ -1,21 +1,44 @@
 html{
     background: #5D8896;
     color: white;
+    font-size: 62.5%;
 }
 
-img{
+h3,h4,img{
     visibility:hidden;
+}
+
+button, input{
+    height: 30px;
+    border-radius: 10px;
+}
+
+button{
+    background: #4CAF50;
+    width: 10%;
+    
+}
+
+input{
+    width: 15%;
+    padding-left: 1%;
+}
+
+img{ 
+    background: lightgrey;
     height:500px;
-    border: 2px solid black;
-    margin: 5% 0
+    border: 5px solid black;
+    margin: 2% 0;
 }
 
-#name{
-    font-size: 50px;
+h3, h4{
+    text-decoration: underline;
+    font-size: 3rem;
+    margin: 0.5% 0;
 }
 
-#team{
-    font-size: 30px;
+#name, #team{
+    font-size: 5rem;
 }
 
 main{
@@ -25,6 +48,5 @@ main{
 }
 
 h2{
-    font-size: 2rem;
-    margin:15px;
+    font-size: 5rem;
 }

@@ -14,6 +14,8 @@ async function sendApiReq(){
         const data = await response.json()
 
         document.querySelector('img').style.visibility = 'visible';
+        document.querySelector('h3').style.visibility = 'visible';
+        document.querySelector('h4').style.visibility = 'visible';
         document.querySelector('#name').innerText = data.pointGuard
         document.querySelector('#team').innerText = data.team
         document.querySelector('img').src = data.photo
