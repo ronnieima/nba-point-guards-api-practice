@@ -6,6 +6,8 @@ const PORT = 8000
 
 app.use(cors())
 
+app.use(express.static('public'))
+
 const teams = {
     'warriors':{
         'pointGuard': 'Stephen Curry',
