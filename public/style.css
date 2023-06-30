@@ -2,6 +2,7 @@ html{
     background: #5D8896;
     color: white;
     font-size: 62.5%;
+    font-family: 'Source Sans 3', sans-serif;
 }
 
 h3,h4,img{
@@ -21,7 +22,6 @@ button{
 
 input{
     width: 15%;
-    padding-left: 1%;
 }
 
 img{ 
@@ -37,7 +37,7 @@ h3, h4{
     margin: 0.5% 0;
 }
 
-#name, #team{
+#name, #team, h2{
     font-size: 5rem;
 }
 
@@ -47,6 +47,6 @@ main{
     align-items: center;
 }
 
-h2{
-    font-size: 5rem;
+p{
+    font-size: 2rem;
 }
