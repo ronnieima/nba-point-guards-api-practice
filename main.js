@@ -7,8 +7,8 @@ async function sendApiReq(){
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h3').innerText = data.pointGuard
-        document.querySelector('h4').innerText = data.team
+        document.querySelector('#name').innerText = data.pointGuard
+        document.querySelector('#team').innerText = data.team
         document.querySelector('img').src = data.photo
     } catch (error) {
         console.log(error)

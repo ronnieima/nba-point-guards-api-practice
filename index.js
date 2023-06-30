@@ -27,6 +27,21 @@ const teams = {
         'team': 'Philadelphia 76ers',
         'photo': 'https://cdn.nba.com/headshots/nba/latest/1040x760/201935.png'
     },
+    'grizzlies':{
+        'pointGuard': 'Ja Morant',
+        'team': 'Memphis Grizzlies',
+        'photo': 'https://cdn.nba.com/headshots/nba/latest/1040x760/1629630.png'
+    },
+    'blazers':{
+        'pointGuard': 'Damian Lillard',
+        'team': 'Portland Trail Blazers',
+        'photo': 'https://cdn.nba.com/headshots/nba/latest/1040x760/203081.png'
+    },
+    'suns':{
+        'pointGuard': 'Chris Paul',
+        'team': 'Phoenix Suns',
+        'photo': 'https://cdn.nba.com/headshots/nba/latest/1040x760/101108.png'
+    },
     'unknown': {
         'pointGuard': 'Unknown',
         'team': 'Unknown',
