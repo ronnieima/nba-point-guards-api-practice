@@ -1,6 +1,7 @@
 document.querySelector('button').addEventListener('click', sendApiReq)
 document.querySelector('button').addEventListener('keypress', (e)=>{
     if (e.key === 'Enter'){
+        console.log('click')
         sendApiReq()
     }
 })
