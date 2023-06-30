@@ -1,4 +1,10 @@
 document.querySelector('button').addEventListener('click', sendApiReq)
+document.querySelector('button').addEventListener('keypress', (e)=>{
+    if (e.key === 'Enter'){
+        sendApiReq()
+    }
+})
+
 
 async function sendApiReq(){
     const teamName = document.querySelector('input').value
