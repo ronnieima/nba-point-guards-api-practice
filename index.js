@@ -6,26 +6,26 @@ const PORT = 8000
 
 app.use(cors())
 
-const rappers = {
-    '21 savage':{
-        'age': 29,
-        'birthName': 'Sheyaa Bin Abraham-Joseph',
-        'birthLocation': 'London, England' 
+const teams = {
+    'warriors':{
+        'pointGuard': 'Stephen Curry',
+        'team': 'Golden State Warriors'
     },
-    'chance the rapper': {
-        'age': 29,
-        'birthName': 'Chancelor Bennett',
-        'birthLocation': 'Chicago, Illiniois' 
+    'mavericks':{
+        'pointGuard': 'Luka Doncic',
+        'team': 'Dallas Mavericks'
     },
-    'yung kaitoima': {
-        'age': 21,
-        'birthName': 'Kaitoima',
-        'birthLocation': 'Tamuning, Guam'
+    'hawks':{
+        'pointGuard': 'Trae Young',
+        'team': 'Atlanta Hawks'
+    },
+    '76ers':{
+        'pointGuard': 'James Harden',
+        'team': 'Philadelphia 76ers'
     },
     'unknown': {
-        'age': 0,
-        'birthName': 'Unknown',
-        'birthLocation': 'Unknown' 
+        'pointGuard': 'Unknown',
+        'team': 'Unknown'
     }
 
 }
@@ -37,11 +37,11 @@ app.get('/', (request, response) => {
 })
 
 app.get('/api/:name', (request, response) =>{
-    let rapperName = request.params.name.toLowerCase()
-    if (rappers[rapperName]){
-        response.json(rappers[rapperName])
+    let teamName = request.params.name.toLowerCase()
+    if (teams[teamName]){
+        response.json(teams[teamName])
     } else{
-        response.json(rappers['unknown'])
+        response.json(teams['unknown'])
     }
 })
 

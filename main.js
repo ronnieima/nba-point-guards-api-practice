@@ -1,13 +1,14 @@
 document.querySelector('button').addEventListener('click', sendApiReq)
 
 async function sendApiReq(){
-    const rapperName = document.querySelector('input').value
+    const teamName = document.querySelector('input').value
     try {
-        const response = await fetch(`https://good-pink-giraffe-shoe.cyclic.app/api/${rapperName}`)
+        const response = await fetch(`https://good-pink-giraffe-shoe.cyclic.app/api/${teamName}`)
         const data = await response.json()
 
         console.log(data)
-        document.querySelector('h3').innerText = data.birthName
+        document.querySelector('h3').innerText = data.pointGuard
+        document.querySelector('h4').innerText = data.team
     } catch (error) {
         console.log(error)
     }
